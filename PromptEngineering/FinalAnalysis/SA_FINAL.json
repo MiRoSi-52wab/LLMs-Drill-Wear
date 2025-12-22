@@ -1,0 +1,18 @@
+{
+    "EASY": [
+        "The estimated wear of your drill bit, made from material 'P' with a feed rate of 0.2 [mm/min] and cutting speed of 100 [m/min], is as follows: Safe - 81.9%, Warning - 15.4%, Fail - 2.7%. This indicates that the drill bit is likely to perform well under these conditions, but there's a small chance of failure.",
+        "Based on the drilling parameters you provided - cooling of 12.5%, feed rate of 0.13 mm/min, and cutting speed of 16.7 m/min - your drilling quality can be evaluated as follows:\n- Edge Quality will likely be Bad due to insufficient cooling.\n- Compression Chips Quality is expected to be Good because the parameters fall within a reasonable range for chip formation.",
+        "The estimated wear for material 'N' with a feed rate of 0.3 and a cutting speed of 120 is as follows:\n- Safe: 77.9%\n- Warning: 18.7%\n- Fail: 3.4%"
+    ],
+    "MEDIUM": [
+        "The estimated wear of your drill bit, made from material 'K', with a feed rate of 0.00025 m/min and cutting speed of 100 mm/min, is considered to be in the \"Safe\" category (90.3%). There's a slight warning (9.1%) and a small chance of failure (0.6%). Your drill bit should be fine for this operation based on these parameters.",
+        "The drilling quality for cooling 10.5%, feed rate 0.2 (in inches/min), and cutting speed 10 (in inches/min) is evaluated as having a Bad Edge Quality and Good Compression Chips Quality.",
+        "The drilling quality with the given feed rate of 0.15 mm/min, cutting speed of 75 m/min, and assuming a cooling value of 15% is considered to be in the \"Good\" category for both edge quality and compression chip quality.",
+        "The estimated wear for drilling material 'P' with a cutting speed of 100 mm/min and feed rate of 0.2 mm/min is as follows: Safe - 81.9%, Warning - 15.4%, Fail - 2.7%. This indicates a relatively low risk of failure under these conditions."
+    ],
+    "HARD": [
+        "Based on the calculations from both functions, your drill bit's wear probability is Safe (74.1%), indicating a low risk of failure under the given conditions. Additionally, assuming the drill bit material is 'N', you can expect Good quality during drilling with respect to Edge Quality and Compression Chips Quality.",
+        "The wear probability for drilling material 'K' with a feed rate of 0.25 and cutting speed of 100 is estimated as follows: Safe (85.6%), Warning (12.3%), Fail (2.1%). \n\nRegarding the quality of your drilling, considering cooling 10%, feed rate of 0.25 [mm/min], and cutting speed of 100 [m/min], it is anticipated to have: Good Edge Quality and Good Compression Chips Quality.",
+        "The wear analysis for your drill bit using material 'N', feed rate of 0.2, and cutting speed of 80 mm/min shows a safe condition with a 95.7% probability of no failure. \n\nFor the quality evaluation, assuming drill bit material as 'H' (assuming H is a common default for non-specified materials), cooling at 10%, feed rate of 0.2 mm/min, and cutting speed of 80 m/min, you can expect Good Quality in both edge and compression chips. \n\nPlease note that these are estimations based on the provided parameters and common industry standards for drill bit materials. For precise results, please provide specific material data if available."
+    ]
+}

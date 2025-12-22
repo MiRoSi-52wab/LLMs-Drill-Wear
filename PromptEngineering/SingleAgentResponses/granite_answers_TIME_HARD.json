@@ -1,0 +1,14 @@
+{
+    "Zero-Shot Prompts": {
+        "id: 0": 73.24371385574341
+    },
+    "Few-Shot Prompts": {
+        "id: 1": 68.47876000404358
+    },
+    "Chain-of-Thought Prompts": {
+        "id: 2": 70.21622705459595
+    },
+    "Plan and Solve Prompts": {
+        "id: 3": 73.32620596885681
+    }
+}
