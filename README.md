@@ -10,6 +10,8 @@ This project is an implementation of both **Single Agent** and **Multi-Agent** s
 
 The goal of the project is to create an interface that allows users (with little experience about Festo Plant Drilling Processes) to get responses about different characteristics of the process, by only the usage of natural language. 
 
+The dataset used was from: *https://www.kaggle.com/datasets/raphaelwallsberger/xai-drilling-dataset*
+
 ## ✨ Key Features & Tasks
 
 This software implements the agentic systems and tool extensions derived from the project requirements:

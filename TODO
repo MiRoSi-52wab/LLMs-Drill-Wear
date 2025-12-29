@@ -1,0 +1,30 @@
+Dataset:
+    REVIEW
+
+
+LLM_Choice: 
+    Review
+
+Promp Egn:
+    Do everything
+
+REsult:
+    Do everything
+
+Tools:
+    Degradation tool: Review
+
+    quality tool: Review
+
+    Tools_LLM: review
+
+    Torque Regression: what to do with this? 
+
+    README: review
+
+README:
+    update at the end 
+    add requirements.txt
+    explain how to use the code 
+    explain how to use ollama and requirements for that 
+

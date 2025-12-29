@@ -2,9 +2,9 @@
 
 ## 📌 Folder Overview
 
-This folder is responsible for analyzing the given dataset and understand the importance of each of its features. The common goal of all the files inside this folder, is to create a solid truth-ground about the data, so that the tools and the agentic systems can be developed with the best features. 
+This folder contains the files that allow for the analysis and development of the degradation tool. It contains two files, each proposing a different approach for the prediction of the flank wear failure (FWF). Below both files are explained in more detail, together with comments on the files themselves.
 
-For this reason, it is called "PreAnalysis" as it does fall into the creation of Tools and Agentic-System directly. Nevertheless, it creates a better understanding of what should and not be considered for such.
+After deveolping the tool, this will be transalted into a python function that can be later used for the agenti system. This function is located inside the folder "Tools_LLM". 
 
 ## ✨ Files Specifications
 
@@ -12,7 +12,7 @@ For this reason, it is called "PreAnalysis" as it does fall into the creation of
 
 As seen in the notebook, the models can correctly predict the zones. Nevertheless, this leads to a higher demand for storage space and there is some confusion from the models to fully understand the area between Safe and Warning regions. For this, the next file implements a different approach.
 
-**Important**: For the scope of this project, the agentic tools were implemented using the models available in this file. 
+**Important**: For the scope of this project, the agentic tools were implemented using the models available in this file (DegradationMultipleModels). 
 
 * **DegradationOneModel.ipynb**: This file creates only one instance of a Decision Tree model for all the materials. For this reason, the model tries to learn all different areas for Safe, Warning and Failure to all models in parallel. Together with this, a filtering technique was used to better hanfle the confusion between Safe and Warning regions. 
 

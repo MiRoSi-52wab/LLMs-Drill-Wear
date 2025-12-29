@@ -7,8 +7,8 @@ eduardo.silva@tum.de
 Description: 
 
 This file is responsible for using the Agent's tools from its raw implementation. 
-With these tools, it is possible to use the user's queries defined in the MultiAgent 
-and SingleAgent files, such that we get the correct expected answers. 
+With these tools, it is possible to use the user's queries defined in the ChooseLLM.ipynb file, 
+such that we get the correct expected answers. 
 
 The correct answers are saved into a .json file that is later used to evaluate both systems on performance.
 
