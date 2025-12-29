@@ -46,5 +46,10 @@ ax.set_title("Time to Complete Different Prompt Types for Various Models", fonts
 plt.xticks(fontsize=14)  # Set font size for x-tick labels
 plt.yticks(fontsize=14)  # Set font size for x-tick labels
 
+plt.tight_layout()
+# Save the figure as a PNG file
+plt.savefig("prompt_times_MA.png", format="png", dpi=300)
+
+
 # Show the plot
 plt.show()
