@@ -14,3 +14,5 @@ In this folder, the development of tools is made, together with their translatio
 
 * **Tools_LLM**: Lastly, in this folder, both degradation and quality tools are translated into python functions that can be used by the agentic system. This only presents the results of the tools, as their development is encompassed in the folders mentioned above.
 
+* **Torque_regression.ipynb**: This is an extra file that was used to implement the torque regression for any material. As of now, this file was not used for any tool, but it can be convienient to extend the existant tools to provide values for more materials than just the ones in the dataset.
+

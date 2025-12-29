@@ -37,7 +37,7 @@ This software implements the agentic systems and tool extensions derived from th
 ```text
 LLMs-Drill-Wear/
 ├── Literature/                  # Project assignment and theoretical background.
-│   ├── ...
+│   ├── presentations/           # Contains all the presentations + poster of the group.
 │   └── ...
 ├── Dataset/                     # Folder containing dataset and initial analysis of features.
 │   ├── XAI_Drilling_Dataset.csv # Datase file.
@@ -45,74 +45,67 @@ LLMs-Drill-Wear/
 │       ├── features_importance.ipynb   # Feature's Importanced Ranked for Flank Wear Failure (FWF).
 │       ├── time_issue.ipynb     # Proof that Processing Time Data is Irrelevant.
 │       └── README.md            # Further explanation about pre-analysis.
-├── Degradation_Tool/            # Folder containing development of Wear/Degradation Tool.
-│   ├── DegradationOneModel.ipynb       # Degradation tool by only using 1 XGBoost model for all materials. 
-│   ├── DegradationMultipleModels.ipynb # Degradation tool by using 1 model for each material.
-│   └── README.md                # More information regarding Degradation tool.
+├── Tools/            # Folder containing development of Wear/Degradation and Quality Tools.
+│   ├── Degradation_Tool/        # Folder for the development of the degradation tool. 
+│   ├── Quality_Tool/            # Folder for the development of the quality tool.
+│   └── Tools_LLM/               # Folder for containing the translation of tools into python functions.
 ├── LLM_Choice/                  # Folder containing analysis over different LLMs performance on responses.
 │   └── Tools_LLM/               # Folder containing the implementation of Degradation and Quality Tools into Python functions. 
 │       ├── saved_models/        # Saved models for wear prediction from Degradation tool. 
 │       └── __init__.py          # Python functions for agentic system
 │   ├── correct_answers_EASY_MEDIUM.json     # JSON file with expected responses for user's queries.
 │   ├── CorrectAnswers.py                    # Python file to create JSON file above.
-│   ├── Single_LLM_Choice.ipynb              # Notebook to evaluate different LLMs performance based on accuracy and time.
+│   ├── ChooseLLM.ipynb                      # Notebook to evaluate different LLMs performance based on accuracy and time.
 │   └── README.md                            # More information regarding LLM choice for the agentic systems.
 ├── PromptEngineering/                  # Folder containing analysis over different prompt techniques.
-│   └── FinalAnalysis/           # Folder containing the analysis of both agentic systems together. 
+│   └── Analysis_SAvsMA/           # Folder containing the analysis and comparison of both agentic systems together. 
 │       ├── ...         
-│       └── FINALComparison.py   # Comparison between best Single Agent and Multi-Agent systems.
-│   └── MultiAgentResponses/           # Folder containing the analysis of Multi-Agent.
+│       └── Comparison_SA_MA.py   # Comparison between best Single Agent and Multi-Agent systems.
+│   └── MultiAgentAnalysis/           # Folder containing the analysis of Multi-Agent.
 │       ├── ...         
 │       └── MultiPromptAnalysis.py   # Analysis of Multi-Agent responses for different prompts.
-│   └── SingleAgentResponses/           # Folder containing the analysis of Single Agent. 
+│   └── SingleAgentAnalysis/           # Folder containing the analysis of Single Agent. 
 │       ├── ...         
 │       └── SinglePromptAnalysis.py.py   # Analysis of Single Agent responses for different prompts.
-│   ├── MultiAgentPrompts.ipynb         # Notebook for acquiring performance of Multi-Agent for Prompts.
-│   ├── SingleAgentPrompts.ipynb        # Notebook for acquiring performance of Single Agent for Prompts.
-│   └── README.md                       # More information for Prompt Engineering.
-├── RESULT/                      # Folder that creates final agentic systems given all performance analysis and features importance.
+│   ├── Prompts_MA.ipynb     # Notebook for acquiring performance of Multi-Agent for Prompts.
+│   ├── Prompts_SA.ipynb     # Notebook for acquiring performance of Single Agent for Prompts.
+│   └── README.md            # More information for Prompt Engineering.
+├── RESULT/      # Folder that creates final agentic systems given all performance analysis and features importance.
 │   ├── ...
-│   ├── FinalMultiAgent.ipynb 
-│   └── FinalSingleAgent.ipynb 
+│   ├── MultiAgent.ipynb  # Result Product for Multi-Agent.
+│   └── SingleAgent.ipynb # Result Product for Single Agent.
+├── requirements.txt             # libraries dependencies  
 └── README.md                    # Project documentation
 
+
 ```
 
-## ⚙️ InstallationTo run this project, you need **Python 3.x** and the following scientific computing libraries:
+## ⚙️ Installation To run this project:
 
-* **NumPy**: For vector and matrix operations.
-* **Matplotlib**: For plotting and animation.
+### **Conda Environment and Libraries:**
 
-You can install the dependencies using pip:
+Initially, it is necessary to create a virtual environment for python. For example, creating a conda environment. 
+All the documentation is available online or at the following link:
 
+After this, install all the required packages by using the following commands:
 ```bash
-pip install numpy matplotlib
-
+conda activate my_env
+pip install -r requirements.txt
 ```
 
-## 🚀 Usage1. **Navigate to the Source Code directory:**
-```bash
-cd "Source Code"
+With this, all the packages are installed for the right usage of the repository. 
 
-```
+### **Ollama and Langchain:**
 
+For developing the LLMs and Prompt Engineering, it is necesary to use Ollama's library. Some more documentation about how to install it and how to incorporate it with Langchain is available in the following links:
 
-2. **Run the simulation:**
-```bash
-python MainDEM.py
+* https://ollama.com/
 
-```
+* https://docs.langchain.com/oss/python/integrations/providers/ollama
 
-
-3. **Configuration:**
-You can modify simulation parameters directly in `MainDEM.py` under the `Inputs` section:
-* `coeff_of_restitution`: Coefficient of restitution (e).
-* `mu_friction`: Coefficient of friction (\mu).
-* `particles`: Initial positions, velocities, and properties of particles.
-* `delta_t`: Time step size.
 
 ## 👥 Contributors
 
-* **Eduardo Silva (03805057)** - *Responsible for LLM choice, Agentic System and Prompt Engineering*
-* **Adri ()** - *Resposible for Degradation/Wear tool literature and development*
-* **Lin ()** - *Responsible for Quality tool literature and development* 
+* **Eduardo Silva (03805057) eduardo.silva@tum.de** - *Responsible for LLM choice, Agentic System, Prompt Engineering and Code Documentation*
+* **Adrian Almohalla (03804037) adrian.almohalla@tum.de** - *Resposible for Degradation/Wear tool literature and development*
+* **Nien-Ying Lin (03803153) go57vov@tum.de** - *Responsible for Quality tool literature and development* 
