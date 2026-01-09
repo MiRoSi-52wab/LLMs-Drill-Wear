@@ -22,16 +22,14 @@ This folder contains the files that are responsible for evaluating what prompts 
 
 For the Multi-Agent and Single Agent system we got the following plots:
 
-![image.png](Analysis_SAvsMA/accuracy_comparison_radar.png)
+![image.png](SingleAgentAnalysis/prompt_times_SA.png)
 
 
-![image.png](Analysis_SAvsMA/time_to_answer_questions.png)
+![image.png](MultiAgentAnalysis/prompt_times_MA.png)
 
-As it can be seen above, the MA system is better at dealing with harder questions but also takes longer to respond. 
-On the other hand, the SA system responds quickly but no so accurately for all difficulties. 
+As it can be seen above, for the single agent system it is better to use Chain-of-Thought prompting, as it leads to a more constant time of response between all difficulties. This suggests that the agentic system is pondering different responses for all scenarios, leading to better and more consistent responses. 
 
-With this in mind, the choice between Multi-Agent and Single-Agent system depends on the application and the desired usage of the copilot. 
-Both options are implemented inside the RESULT/ folder.
+For the multi-agent system, it is noticable that the supervisor agent reacts better under the Plan and Solve technique, while both Wear and Quality agents thrive under Zero-Shot promtps. This is expected, since the goal of the supervisor is to coordinate the other two agents focused on just using and retrieving values from the tools.
 
 ## 🚀 Possible Next Steps: 
 

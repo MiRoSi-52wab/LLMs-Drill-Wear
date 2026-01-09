@@ -16,10 +16,10 @@ This folder contains the results of the project. This means that after developin
 
 For the Multi-Agent and Single Agent system we got the following plots:
 
-![image.png](Analysis_SAvsMA/accuracy_comparison_radar.png)
+![image.png](accuracy_comparison_radar.png)
 
 
-![image.png](Analysis_SAvsMA/time_to_answer_questions.png)
+![image.png](time_to_answer_questions.png)
 
 As it can be seen above, the MA system is better at dealing with harder questions but also takes longer to respond. 
 On the other hand, the SA system responds quickly but no so accurately for all difficulties. 
