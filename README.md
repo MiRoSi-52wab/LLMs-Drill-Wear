@@ -74,8 +74,9 @@ LLMs-Drill-Wear/
 │   ├── ...
 │   ├── MultiAgent.ipynb  # Result Product for Multi-Agent.
 │   └── SingleAgent.ipynb # Result Product for Single Agent.
-├── requirements.txt             # libraries dependencies  
-└── README.md                    # Project documentation
+├── requirements.txt             # libraries dependencies.  
+├── SoftwareLab_Report.pdf       # Final report from project.
+└── README.md                    # Project documentation.
 
 
 ```
